@@ -18,7 +18,7 @@ export default function SimpleMenu() {
 
   return (
     <div>
-        <MenuIcon aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick} />
+        <MenuIcon aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick} fontSize='large' />
       
       <Menu
         id="simple-menu"
