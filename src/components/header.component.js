@@ -5,6 +5,7 @@ import PublicRoundedIcon from '@material-ui/icons/PublicRounded';
 import Background from '../background.jpeg';
 import Typography from '@material-ui/core/Typography';
 import SimpleMenu from './simpleMenu.component';
+import { Link } from "react-router-dom";
 
 export default class Header extends Component {
     render() {
@@ -48,21 +49,19 @@ export default class Header extends Component {
 
                         <Grid item md={8}>
                         </Grid>
-
+                        <Grid item md={1}>
+                        <Link to="/" style={{ textDecoration: 'none' }}><Button variant="contained" size='large' >Home</Button></Link>
+                        </Grid>
                         <Grid item md={1} >
-                            <Button variant="contained" size="large" color="default">Services</Button>
+                        <Link to="/services" style={{ textDecoration: 'none' }}> <Button variant="contained" size="large" color="default">Services</Button></Link>
                         </Grid>
 
                         <Grid item md={1}>
-                            <Button variant="contained" size="large" color="default">About</Button>
+                        <Link to='/about' style={{ textDecoration: 'none' }}><Button variant="contained" size="large" color="default">About</Button></Link>
                         </Grid>
 
                         <Grid item md={1}>
-                            <Button variant="contained" size="large" color="default" >Contact</Button>
-                        </Grid>
-
-                        <Grid item md={1}>
-                            <Button variant="contained" size='large' >Login</Button>
+                        <Link to="/contact" style={{ textDecoration: 'none' }}><Button variant="contained" size="large" color="default" >Contact</Button></Link>
                         </Grid>
 
                     </Hidden>
